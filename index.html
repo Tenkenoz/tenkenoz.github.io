@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Erick Obando | Ingeniería de Software</title>
+
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google Fonts: Montserrat + Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="header">
+        <div class="header__logo">
+            <h4 class="header__title">EOZ</h4>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a class="header__link" href="#presentation">Inicio</a></li>
+                <li><a class="header__link" href="#about">Sobre mí</a></li>
+                <li><a class="header__link" href="#services">Servicios</a></li>
+                <li><a class="header__link" href="#projects">Proyectos</a></li>
+                <li><a class="header__link" href="#skills">Habilidades</a></li>
+                <li><a class="header__link" href="#experience">Experiencia</a></li>
+                <li><a class="header__link" href="#education">Formación</a></li>
+                <li><a class="header__link" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__social">
+            <a href="https://github.com/Tenkenoz" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/erick-obando-b952523a4" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO / PRESENTACIÓN -->
+        <section class="presentation" id="presentation">
+            <article class="presentation__content">
+                <span class="presentation__greeting">HOLA MUNDO 👋</span>
+                <h1 class="presentation__title">
+                    Mi nombre es
+                    <span class="presentation__name">ERICK OBANDO</span>
+                </h1>
+                <h3 class="presentation__subtitle">Estudiante de Ingeniería de Software</h3>
+                <p class="presentation__description">
+                    Apasionado por el desarrollo tecnológico, la ciberseguridad y el aprendizaje continuo. 
+                    Construyo soluciones digitales modernas con foco en rendimiento.
+                </p>
+                <div class="presentation__buttons">
+                    <a href="CV_ObandoErick.pdf" download class="presentation__button">
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                    </a>
+                    <a href="#projects" class="presentation__button presentation__button--secondary">
+                        Ver proyectos
+                    </a>
+                </div>
+            </article>
+
+            <article class="presentation__image">
+                <div class="presentation__circle"></div>
+                <img src="WIN_20260515_16_57_48_Pro.png" alt="Erick Obando - Foto perfil" class="presentation__img">
+            </article>
+        </section>
+
+        <!-- ABOUT (intro + imagen) -->
+        <section class="about" id="about">
+            <div class="section__header">
+                <span class="section__subtitle">SOBRE MÍ</span>
+                <h2 class="section__title">Un poco sobre mi</h2>
+            </div>
+            <div class="about__top">
+                <article class="about__intro">
+                    <p class="about__paragraph" style="font-size:large;">
+                        Estudiante de Ingeniería de Software en la Universidad de las Fuerzas Armadas ESPE, apasionado por el desarrollo tecnológico y el aprendizaje continuo. Me interesa explorar áreas como desarrollo web, análisis de datos, cloud computing y ciberseguridad, participando en proyectos académicos, competencias tecnológicas y espacios de aprendizaje que fortalecen mis habilidades técnicas, analíticas y de resolución de problemas.</p>
+                    
+                </article>
+                <article class="about__image-container">
+                    <div class="about__image-border"></div>
+                    <img src="https://avatars.githubusercontent.com/u/122644863?v=4" alt="Erick Obando - perfil" class="about__image">
+                </article>
+            </div>
+        </section>
+
+        <!-- SERVICIOS (dinámicos con datos reales) -->
+        <section class="services" id="services">
+            <div class="section__header">
+                <span class="section__subtitle">LO QUE HAGO</span>
+                <h2 class="section__title">Servicios & especialidades</h2>
+            </div>
+            <div class="services__grid" id="services-container"></div>
+        </section>
+
+        <!-- PROYECTOS (con datos del CV + portafolio) -->
+        <section class="projects" id="projects">
+            <div class="section__header">
+                <span class="section__subtitle">PORTAFOLIO</span>
+                <h2 class="section__title">Proyectos </h2>
+            </div>
+            <div class="projects__container" id="projects-container"></div>
+        </section>
+
+        <!-- HABILIDADES TÉCNICAS (CV completo) -->
+        <section class="skills" id="skills">
+            <div class="section__header">
+                <span class="section__subtitle">TECNOLOGÍAS</span>
+                <h2 class="section__title">Stack & herramientas</h2>
+            </div>
+            <div class="skills__container" id="skills-container"></div>
+        </section>
+
+        <!-- EXPERIENCIA (competencias, voluntariados) -->
+        <section class="experience" id="experience">
+            <div class="section__header">
+                <span class="section__subtitle">TRAYECTORIA</span>
+                <h2 class="section__title">Experiencia & logros</h2>
+            </div>
+            <div class="experience__grid" id="experience-container"></div>
+        </section>
+
+        <!-- EDUCACIÓN + CERTIFICACIONES -->
+        <section class="education" id="education">
+            <div class="section__header">
+                <span class="section__subtitle">FORMACIÓN</span>
+                <h2 class="section__title">Educación y certificaciones</h2>
+            </div>
+            <div class="education__wrapper" id="education-container"></div>
+        </section>
+
+        <!-- CONTACTO -->
+<section class="contact" id="contact">
+    <div class="section__header">
+        <span class="section__subtitle">CONECTAME</span>
+        <h2 class="section__title">Enviame un mensaje </h2>
+    </div>
+    <div class="contact__container">
+        <article class="contact__info">
+            <a href="mailto:obanderick@gmail.com" class="contact__item" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <strong>Email</strong>
+                    <p>obanderick@gmail.com</p>
+                </div>
+            </a>
+            
+            <a href="https://wa.me/593984410337" class="contact__item" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <strong>Teléfono / WhatsApp</strong>
+                    <p>+593 98 441 0337</p>
+                </div>
+            </a>
+            
+            <a href="https://github.com/Tenkenoz" class="contact__item" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                <div>
+                    <strong>GitHub</strong>
+                    <p>github.com/Tenkenoz</p>
+                </div>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/erick-obando-b952523a4" class="contact__item" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                <div>
+                    <strong>LinkedIn</strong>
+                    <p>linkedin.com/in/erick-obando</p>
+                </div>
+            </a>
+        </article>
+
+        <form class="contact__form" id="contactForm">
+            <h3 class="contact__form-title">Enviame un mensaje desde aqui</h3>
+            <input type="text" placeholder="Nombre completo" class="contact__input" id="contactName" required>
+            <input type="email" placeholder="Correo electrónico" class="contact__input" id="contactEmail" required>
+            <textarea class="contact__textarea" placeholder="Enviame un mensaje" id="contactMessage" required></textarea>
+            <button type="submit" class="contact__button">
+                Enviar mensaje <i class="fa-regular fa-paper-plane"></i>
+            </button>
+            <p class="form-message" id="formFeedback"></p>
+        </form>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Erick Obando | Ingeniería de Software - Portafolio profesional</p>
+        <div class="footer__social">
+            <a href="https://github.com/Tenkenoz" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/erick-obando-b952523a4" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+<!-- SCRIPTS - Al final del body -->
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrambleTextPlugin.min.js"></script>
+<script src="Animation.js"></script>
+
+<!-- EmailJS - Inicialización ÚNICA -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("6Qro5bsCziJF-MPyx");
+    })();
+</script>
+
+
+<script src="main.js"></script>
+</body>
+</html>
